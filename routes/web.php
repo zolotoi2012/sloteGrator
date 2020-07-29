@@ -21,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/get-prize', 'PrizeController@getPrize')->name('get-prize');
-Route::post('/convert-money/{amount}', 'PrizeController@convert')->name('convert-money');
+Route::get('/convert-money/{amount}', 'PrizeController@convert')->name('convert-money');
+Route::post('/cancel-prize/{prize}', 'PrizeController@cancel')->name('cancel-prize');
